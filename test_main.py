@@ -1,5 +1,6 @@
-from main import calcular_lucro
+from main import calcular_lucro, calcular_faturamento
 
 
 def test_calcular_lucro():
-  pass
+  faturamento = calcular_faturamento()
+  assert calcular_lucro(faturamento, 5000) > 0
