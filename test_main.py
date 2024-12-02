@@ -1,4 +1,5 @@
 from main import calcular_lucro, calcular_faturamento
+import pytest
 
 
 def test_calcular_lucro():
@@ -6,5 +7,7 @@ def test_calcular_lucro():
   assert calcular_lucro(faturamento, 500) > 0
 
 
-# def test_calcular_faturamento():
-#   assert type(calcular_faturamento()) == int
+#faturamento(marcador)
+@pytest.mark.faturamento
+def test_calcular_faturamento():
+  assert calcular_faturamento() > 0
