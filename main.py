@@ -6,7 +6,10 @@ def calcular_faturamento():
   faturamento = sum(vendas)
   return faturamento
 
-#calcular custo
+#calcular custo(em dolar)
+def calcular_custo(cotacao_dolar):
+  custo = 1000 * cotacao_dolar
+  return custo
 
 #calcular lucro
 def calcular_lucro(faturamento, custo):
